@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output-style.css" />
+    <title>VooDoo</title>
+  </head>
+  <body class="mx-auto">
+    <div class="bg-bg">
+      <header class="border-b-[1px] border-black bg-bg font-grotesk">
+        <div class="container flex justify-between pt-12 pb-12">
+          <img
+            class="cursor-pointer max-[600px]:w-[150px] max-[460px]:w-[70px]"
+            src="images/logo.png"
+            alt="logo"
+          />
+          <div class="text-xl pt-[9px]">
+            <a href="#" class="pr-12 inline-block font-semibold cursor-pointer max-[460px]:pr-1"
+              >About us</a
+            >
+            <a href="#" class="p-2 bg-black text-white font-bold rounded-md cursor-pointer"
+              >Sing-up</a
+            >
+          </div>
+        </div>
+      </header>
+      <section class="container pt-[100px] bg-bg pb-[128px]">
+        <div
+          class="bg-black rounded-md flex p-6 items-center font-grotesk cursor-pointer"
+          id="info"
+        >
+          <img src="images/info.png" alt="information" />
+          <p class="uppercase font-bold text-base text-white ml-1.5">alpha</p>
+          <p class="text-white text-sm ml-12 font-medium max-[375px]:ml-2">
+            Important info
+            <span class="max-[500px]:hidden" id="hide">regarding our service</span>
+          </p>
+          <img
+            class="ml-auto transform transition-transform duration-300"
+            id="arrow"
+            src="images/arrow-open.png"
+            alt="open"
+          />
+        </div>
+        <div class="hidden bg-black p-4 rounded-b-md" id="hiddenInfo">
+          <p class="text-white text-sm font-medium font-grotesk">
+            This is the hidden information that will be displayed when expanded.
+          </p>
+        </div>
+        <div
+          class="products grid grid-cols-4 gap-4 mt-12 max-[500px]:grid-cols-1 max-[768px]:grid-cols-2 max-[1024px]:grid-cols-3"
+        ></div>
+        <div class="text-center pt-[96px] font-grotesk">
+          <h2 class="text-xl pb-[24px]">Be the first one to know when we launch our beta!</h2>
+          <form class="flex justify-center" action="#">
+            <input
+              class="h-[43px] w-[518px] mr-[12px] rounded-md px-4 placeholder-black font-semibold text-base max-[375px]:w-[170px]"
+              type="text"
+              placeholder="E-mail"
+            />
+            <a
+              class="cursor-pointer p-[11px] bg-[#ED5E21] text-white text-base font-medium rounded-md min-w-[94px]"
+              href="#"
+              >Sing-up</a
+            >
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="py-[85px] border-t-[1px] border-black font-mono">
+      <div
+        class="flex justify-between items-start container font-bold text-sm max-[600px]:flex-col"
+      >
+        <img
+          class="my-auto cursor-pointer max-[600px]:order-3 max-[600px]:mx-auto"
+          src="images/footer-logo.png"
+          alt="logo"
+        />
+        <ul class="max-[600px]:mb-12">
+          <li class="mb-[19px]">FAQ</li>
+          <li class="mb-[19px]">RETURNS</li>
+          <li>CONTACT</li>
+        </ul>
+        <ul class="max-[600px]:mb-12">
+          <li class="mb-[19px]">TERMS & CONDITIONS</li>
+          <li class="mb-[19px]">PRIVACY POLICY</li>
+          <li class="mb-[19px]">COOKIE POLICY</li>
+          <li>COOKIE SETTINGS</li>
+        </ul>
+        <ul class="max-[600px]:mb-12">
+          <li class="mb-[19px]">ABOUT SECOND CHANCE</li>
+          <li class="mb-[19px]">CAREER</li>
+          <li class="mb-[19px]">FACEBOOK</li>
+          <li>INSTAGRAM</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
